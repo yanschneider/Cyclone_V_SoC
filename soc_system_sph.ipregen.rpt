@@ -1,0 +1,231 @@
+IP Upgrade report for soc_system_sph
+Mon Apr 15 12:25:42 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; IP Upgrade Summary                                                         ;
++------------------------------+---------------------------------------------+
+; IP Components Upgrade Status ; Passed - Mon Apr 15 12:25:42 2019           ;
+; Quartus Prime Version        ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                ; soc_system_sph                              ;
+; Top-level Entity Name        ; soc_system_sph_top_level                    ;
+; Family                       ; Cyclone V                                   ;
++------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                                                                    ;
++----------------+----------------+---------+---------------------------------------------+----------------------+---------------------------------------------+---------+
+; Entity Name    ; Component Name ; Version ; Original Source File                        ; Generation File Path ; New Source File                             ; Message ;
++----------------+----------------+---------+---------------------------------------------+----------------------+---------------------------------------------+---------+
+; soc_system_sph ; Qsys           ; 17.1    ; soc_system_sph/synthesis/soc_system_sph.qip ; soc_system_sph.qsys  ; soc_system_sph/synthesis/soc_system_sph.qip ;         ;
++----------------+----------------+---------+---------------------------------------------+----------------------+---------------------------------------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "soc_system_sph.qsys" to "soc_system_sph.BAK.qsys"
+Info (11902): Backing up file "soc_system_sph/synthesis/soc_system_sph.v" to "soc_system_sph.BAK.v"
+Info (11837): Started upgrading IP component Qsys with file "soc_system_sph.qsys"
+Info: 2019.04.15.12:23:51 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info: 2019.04.15.12:23:51 Info: Finished upgrading the ip cores
+Info: 2019.04.15.12:24:10 Info: Saving generation log to /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph
+Info: 2019.04.15.12:24:10 Info: Starting: Create simulation model
+Info: 2019.04.15.12:24:10 Info: Loading soc_system_sph_led
+Info: 2019.04.15.12:24:10 Info: Reading input file
+Info: 2019.04.15.12:24:10 Info: Adding clk_0 [clock_source 18.1]
+Info: 2019.04.15.12:24:10 Info: Parameterizing module clk_0
+Info: 2019.04.15.12:24:10 Info: Adding hps_0 [altera_hps 18.1]
+Info: 2019.04.15.12:24:10 Info: Parameterizing module hps_0
+Info: 2019.04.15.12:24:10 Info: Adding led_pio [altera_avalon_pio 18.1]
+Info: 2019.04.15.12:24:10 Info: Parameterizing module led_pio
+Info: 2019.04.15.12:24:10 Info: Building connections
+Info: 2019.04.15.12:24:10 Info: Parameterizing connections
+Info: 2019.04.15.12:24:10 Info: Validating
+Info: 2019.04.15.12:24:16 Info: Done reading input file
+Info: 2019.04.15.12:24:17 Info: soc_system_sph.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2019.04.15.12:24:17 Info: soc_system_sph.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2019.04.15.12:24:17 Warning: soc_system_sph.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: 2019.04.15.12:24:17 Warning: soc_system_sph.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: 2019.04.15.12:24:19 Info: soc_system_sph: Generating soc_system_sph "soc_system_sph" for SIM_VERILOG
+Info: 2019.04.15.12:24:22 Info: Interconnect is inserted between master hps_0.h2f_lw_axi_master and slave led_pio.s1 because the master is of type axi and the slave is of type avalon.
+Warning: 2019.04.15.12:24:23 Warning: hps_0.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: 2019.04.15.12:24:23 Warning: hps_0.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: 2019.04.15.12:24:23 Warning: hps_0.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: 2019.04.15.12:24:23 Warning: hps_0.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: 2019.04.15.12:24:26 Info: hps_0: "Running  for module: hps_0"
+Info: 2019.04.15.12:24:26 Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2019.04.15.12:24:27 Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2019.04.15.12:24:27 Warning: hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: 2019.04.15.12:24:27 Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: 2019.04.15.12:24:28 Info: hps_0: "soc_system_sph" instantiated altera_hps "hps_0"
+Info: 2019.04.15.12:24:28 Info: led_pio: Starting RTL generation for module 'soc_system_sph_led_pio'
+Info: 2019.04.15.12:24:28 Info: led_pio:   Generation command is [exec /home/parallels/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/parallels/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/parallels/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/parallels/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/parallels/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/parallels/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/parallels/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/parallels/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_sph_led_pio --dir=/tmp/alt8001_5955561633280308283.dir/0002_led_pio_gen/ --quartus_dir=/home/parallels/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8001_5955561633280308283.dir/0002_led_pio_gen//soc_system_sph_led_pio_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt8001_5955561633280308283.dir/0002_led_pio_gen
+Info: 2019.04.15.12:24:28 Info: led_pio: Done RTL generation for module 'soc_system_sph_led_pio'
+2019.04.15.12:24:28 Info: led_pio: "soc_system_sph" instantiated altera_avalon_pio "led_pio"
+Info: 2019.04.15.12:24:28 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2019.04.15.12:24:28 Info: mm_interconnect_0: "soc_system_sph" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2019.04.15.12:24:28 Info: irq_mapper: "soc_system_sph" instantiated altera_irq_mapper "irq_mapper"
+Info: 2019.04.15.12:24:28 Info: rst_controller: "soc_system_sph" instantiated altera_reset_controller "rst_controller"
+Info: 2019.04.15.12:24:28 Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: 2019.04.15.12:24:28 Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: 2019.04.15.12:24:28 Info: led_pio_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "led_pio_s1_translator"
+Info: 2019.04.15.12:24:28 Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: 2019.04.15.12:24:28 Info: led_pio_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "led_pio_s1_agent"
+Info: 2019.04.15.12:24:28 Info: led_pio_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "led_pio_s1_agent_rsp_fifo"
+Info: 2019.04.15.12:24:28 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: 2019.04.15.12:24:28 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: 2019.04.15.12:24:28 Info: led_pio_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "led_pio_s1_burst_adapter"
+Info: 2019.04.15.12:24:28 Info: Reusing file /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation/submodules
+Info: 2019.04.15.12:24:28 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2019.04.15.12:24:28 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2019.04.15.12:24:28 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2019.04.15.12:24:28 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2019.04.15.12:24:28 Info: Reusing file /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation/submodules
+Info: 2019.04.15.12:24:29 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: 2019.04.15.12:24:29 Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: 2019.04.15.12:24:29 Info: Reusing file /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation/submodules
+Info: 2019.04.15.12:24:29 Info: Reusing file /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation/submodules
+Info: 2019.04.15.12:24:29 Info: Reusing file /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation/submodules
+Info: 2019.04.15.12:24:29 Info: Reusing file /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation/submodules
+Info: 2019.04.15.12:24:29 Info: Reusing file /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation/submodules
+Info: 2019.04.15.12:24:29 Info: Reusing file /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation/submodules
+Info: 2019.04.15.12:24:29 Info: Reusing file /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation/submodules
+Info: 2019.04.15.12:24:29 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: 2019.04.15.12:24:29 Info: soc_system_sph: Done "soc_system_sph" with 22 modules, 48 files
+Info: 2019.04.15.12:24:29 Info: qsys-generate succeeded.
+Info: 2019.04.15.12:24:29 Info: Finished: Create simulation model
+Info: 2019.04.15.12:24:29 Info: Starting: Create Modelsim Project.
+Info: 2019.04.15.12:24:29 Info: sim-script-gen --spd=/home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/soc_system_sph.spd --output-directory=/home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation
+Info: 2019.04.15.12:24:29 Info: Doing: ip-make-simscript --spd=/home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/soc_system_sph.spd --output-directory=/home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation
+Info: 2019.04.15.12:24:29 Info: Generating the following file(s) for MODELSIM simulator in /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation
+Info: 2019.04.15.12:24:29 Info:     mentor
+Info: 2019.04.15.12:24:29 Info: Generating the following file(s) for VCS simulator in /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation
+Info: 2019.04.15.12:24:29 Info:     synopsys/vcs
+Info: 2019.04.15.12:24:29 Info: Generating the following file(s) for VCSMX simulator in /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation
+Info: 2019.04.15.12:24:29 Info:     synopsys/vcsmx
+Info: 2019.04.15.12:24:29 Info:     synopsys/vcsmx
+Info: 2019.04.15.12:24:29 Info: Generating the following file(s) for NCSIM simulator in /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation
+Info: 2019.04.15.12:24:29 Info:     cadence
+Info: 2019.04.15.12:24:29 Info:     cadence
+Info: 2019.04.15.12:24:29 Info:     cadence
+Info: 2019.04.15.12:24:29 Info:     22 .cds.lib files in cadence/cds_libs
+Info: 2019.04.15.12:24:30 Info: Generating the following file(s) for RIVIERA simulator in /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation
+Info: 2019.04.15.12:24:30 Info:     aldec
+Info: 2019.04.15.12:24:30 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/simulation
+Info: 2019.04.15.12:24:30 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: 2019.04.15.12:24:30 Info: Finished: Create Modelsim Project.
+Info: 2019.04.15.12:24:30 Info: Starting: Create block symbol file (.bsf)
+Info: 2019.04.15.12:24:30 Info: Loading soc_system_sph_led
+Info: 2019.04.15.12:24:30 Info: Reading input file
+Info: 2019.04.15.12:24:30 Info: Adding clk_0 [clock_source 18.1]
+Info: 2019.04.15.12:24:30 Info: Parameterizing module clk_0
+Info: 2019.04.15.12:24:30 Info: Adding hps_0 [altera_hps 18.1]
+Info: 2019.04.15.12:24:30 Info: Parameterizing module hps_0
+Info: 2019.04.15.12:24:30 Info: Adding led_pio [altera_avalon_pio 18.1]
+Info: 2019.04.15.12:24:30 Info: Parameterizing module led_pio
+Info: 2019.04.15.12:24:30 Info: Building connections
+Info: 2019.04.15.12:24:30 Info: Parameterizing connections
+Info: 2019.04.15.12:24:30 Info: Validating
+Info: 2019.04.15.12:24:35 Info: Done reading input file
+Info: 2019.04.15.12:24:37 Info: soc_system_sph.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2019.04.15.12:24:37 Info: soc_system_sph.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2019.04.15.12:24:37 Warning: soc_system_sph.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: 2019.04.15.12:24:37 Warning: soc_system_sph.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: 2019.04.15.12:24:38 Info: Loading soc_system_sph_led
+Info: 2019.04.15.12:24:38 Info: Reading input file
+Info: 2019.04.15.12:24:38 Info: Adding clk_0 [clock_source 18.1]
+Info: 2019.04.15.12:24:38 Info: Parameterizing module clk_0
+Info: 2019.04.15.12:24:38 Info: Adding hps_0 [altera_hps 18.1]
+Info: 2019.04.15.12:24:38 Info: Parameterizing module hps_0
+Info: 2019.04.15.12:24:38 Info: Adding led_pio [altera_avalon_pio 18.1]
+Info: 2019.04.15.12:24:38 Info: Parameterizing module led_pio
+Info: 2019.04.15.12:24:38 Info: Building connections
+Info: 2019.04.15.12:24:38 Info: Parameterizing connections
+Info: 2019.04.15.12:24:38 Info: Validating
+Info: 2019.04.15.12:24:44 Info: Done reading input file
+Info: 2019.04.15.12:24:45 Info: soc_system_sph.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2019.04.15.12:24:45 Info: soc_system_sph.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2019.04.15.12:24:45 Warning: soc_system_sph.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: 2019.04.15.12:24:45 Warning: soc_system_sph.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: 2019.04.15.12:25:08 Info: soc_system_sph: Generating soc_system_sph "soc_system_sph" for QUARTUS_SYNTH
+Info: 2019.04.15.12:25:10 Info: Interconnect is inserted between master hps_0.h2f_lw_axi_master and slave led_pio.s1 because the master is of type axi and the slave is of type avalon.
+Warning: 2019.04.15.12:25:10 Warning: hps_0.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: 2019.04.15.12:25:10 Warning: hps_0.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: 2019.04.15.12:25:10 Warning: hps_0.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: 2019.04.15.12:25:10 Warning: hps_0.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: 2019.04.15.12:25:13 Info: hps_0: "Running  for module: hps_0"
+Info: 2019.04.15.12:25:13 Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2019.04.15.12:25:14 Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2019.04.15.12:25:14 Warning: hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: 2019.04.15.12:25:14 Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: 2019.04.15.12:25:14 Info: hps_0: "soc_system_sph" instantiated altera_hps "hps_0"
+Info: 2019.04.15.12:25:14 Info: led_pio: Starting RTL generation for module 'soc_system_sph_led_pio'
+Info: 2019.04.15.12:25:14 Info: led_pio:   Generation command is [exec /home/parallels/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/parallels/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/parallels/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/parallels/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/parallels/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/parallels/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/parallels/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/parallels/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_sph_led_pio --dir=/tmp/alt8001_5955561633280308283.dir/0020_led_pio_gen/ --quartus_dir=/home/parallels/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8001_5955561633280308283.dir/0020_led_pio_gen/
+Info: 2019.04.15.12:25:14 Info: led_pio: Done RTL generation for module 'soc_system_sph_led_pio'
+Info: 2019.04.15.12:25:14 Info: led_pio: "soc_system_sph" instantiated altera_avalon_pio "led_pio"
+Info: 2019.04.15.12:25:14 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2019.04.15.12:25:15 Info: mm_interconnect_0: "soc_system_sph" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2019.04.15.12:25:15 Info: irq_mapper: "soc_system_sph" instantiated altera_irq_mapper "irq_mapper"
+Info: 2019.04.15.12:25:15 Info: rst_controller: "soc_system_sph" instantiated altera_reset_controller "rst_controller"
+Info: 2019.04.15.12:25:15 Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: 2019.04.15.12:25:15 Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: 2019.04.15.12:25:15 Info: led_pio_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "led_pio_s1_translator"
+Info: 2019.04.15.12:25:15 Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: 2019.04.15.12:25:15 Info: led_pio_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "led_pio_s1_agent"
+Info: 2019.04.15.12:25:15 Info: led_pio_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "led_pio_s1_agent_rsp_fifo"
+Info: 2019.04.15.12:25:15 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: 2019.04.15.12:25:15 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: 2019.04.15.12:25:15 Info: led_pio_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "led_pio_s1_burst_adapter"
+Info: 2019.04.15.12:25:15 Info: Reusing file /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/synthesis/submodules
+Info: 2019.04.15.12:25:15 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2019.04.15.12:25:15 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2019.04.15.12:25:15 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2019.04.15.12:25:15 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2019.04.15.12:25:15 Info: Reusing file /home/parallels/intelFPGA_lite/18.1/quartus_projects/soc_system_sph_led/soc_system_sph/synthesis/submodules
+Info: 2019.04.15.12:25:15 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: 2019.04.15.12:25:35 Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: 2019.04.15.12:25:35 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: 2019.04.15.12:25:35 Info: soc_system_sph: Done "soc_system_sph" with 22 modules, 78 files
+Info: 2019.04.15.12:25:36 Info: qsys-generate succeeded.
+Info: 2019.04.15.12:25:36 Info: Finished: Create HDL design files for synthesis
+Info (11131): Completed upgrading IP component Qsys with file "soc_system_sph.qsys"
+Info (23030): Evaluation of Tcl script /home/parallels/intelFPGA_lite/18.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 1070 megabytes
+    Info: Processing ended: Mon Apr 15 12:25:47 2019
+    Info: Elapsed time: 00:02:29
+    Info: Total CPU time (on all processors): 00:03:29
+
+

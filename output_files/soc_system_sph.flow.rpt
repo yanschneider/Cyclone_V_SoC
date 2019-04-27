@@ -1,0 +1,171 @@
+Flow report for soc_system_sph
+Fri Apr 26 14:44:20 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Fri Apr 26 14:44:20 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; soc_system_sph                              ;
+; Top-level Entity Name           ; soc_system_sph_top_level                    ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSXFC6D6F31C6                              ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 377 / 41,910 ( < 1 % )                      ;
+; Total registers                 ; 720                                         ;
+; Total pins                      ; 298 / 499 ( 60 % )                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 112 ( 0 % )                             ;
+; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                               ;
+; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                               ;
+; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                               ;
+; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                               ;
+; Total PLLs                      ; 0 / 15 ( 0 % )                              ;
+; Total DLLs                      ; 1 / 4 ( 25 % )                              ;
++---------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 04/26/2019 14:38:45 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; soc_system_sph      ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                            ;
++---------------------------------------+------------------------------------------------------------------------------+----------------+------------------------------------+----------------+
+; Assignment Name                       ; Value                                                                        ; Default Value  ; Entity Name                        ; Section Id     ;
++---------------------------------------+------------------------------------------------------------------------------+----------------+------------------------------------+----------------+
+; COMPILER_SIGNATURE_ID                 ; 121374667490.155628232226187                                                 ; --             ; --                                 ; --             ;
+; ECO_REGENERATE_REPORT                 ; On                                                                           ; Off            ; --                                 ; --             ;
+; EDA_OUTPUT_DATA_FORMAT                ; Systemverilog Hdl                                                            ; --             ; --                                 ; eda_simulation ;
+; EDA_SIMULATION_TOOL                   ; ModelSim-Altera (SystemVerilog)                                              ; <None>         ; --                                 ; --             ;
+; EDA_TIME_SCALE                        ; 1 ps                                                                         ; --             ; --                                 ; eda_simulation ;
+; HPS_ISW_FILE                          ; soc_system_sph/synthesis/submodules/sequencer/sequencer.pre.c                ; --             ; soc_system_sph_hps_0_hps_io_border ; --             ;
+; HPS_ISW_FILE                          ; soc_system_sph/synthesis/submodules/sequencer/alt_types.pre.h                ; --             ; soc_system_sph_hps_0_hps_io_border ; --             ;
+; HPS_ISW_FILE                          ; soc_system_sph/synthesis/submodules/sequencer/sequencer_auto_inst_init.pre.c ; --             ; soc_system_sph_hps_0_hps_io_border ; --             ;
+; HPS_ISW_FILE                          ; soc_system_sph/synthesis/submodules/sequencer/sequencer.pre.h                ; --             ; soc_system_sph_hps_0_hps_io_border ; --             ;
+; HPS_ISW_FILE                          ; soc_system_sph/synthesis/submodules/sequencer/emif.pre.xml                   ; --             ; soc_system_sph_hps_0_hps_io_border ; --             ;
+; HPS_ISW_FILE                          ; soc_system_sph/synthesis/submodules/sequencer/sequencer_auto_ac_init.pre.c   ; --             ; soc_system_sph_hps_0_hps_io_border ; --             ;
+; HPS_ISW_FILE                          ; soc_system_sph/synthesis/submodules/sequencer/tclrpt.pre.c                   ; --             ; soc_system_sph_hps_0_hps_io_border ; --             ;
+; HPS_ISW_FILE                          ; soc_system_sph/synthesis/submodules/sequencer/sequencer_auto.pre.h           ; --             ; soc_system_sph_hps_0_hps_io_border ; --             ;
+; HPS_ISW_FILE                          ; soc_system_sph/synthesis/submodules/sequencer/sequencer_defines.pre.h        ; --             ; soc_system_sph_hps_0_hps_io_border ; --             ;
+; HPS_ISW_FILE                          ; soc_system_sph/synthesis/submodules/sequencer/tclrpt.pre.h                   ; --             ; soc_system_sph_hps_0_hps_io_border ; --             ;
+; HPS_ISW_FILE                          ; soc_system_sph/synthesis/submodules/sequencer/system.pre.h                   ; --             ; soc_system_sph_hps_0_hps_io_border ; --             ;
+; HPS_ISW_FILE                          ; soc_system_sph/synthesis/submodules/sequencer/sdram_io.pre.h                 ; --             ; soc_system_sph_hps_0_hps_io_border ; --             ;
+; HPS_ISW_FILE                          ; soc_system_sph/synthesis/submodules/hps.pre.xml                              ; --             ; soc_system_sph_hps_0_hps_io_border ; --             ;
+; HPS_PARTITION                         ; On                                                                           ; --             ; soc_system_sph_hps_0_hps_io_border ; --             ;
+; MAX_CORE_JUNCTION_TEMP                ; 85                                                                           ; --             ; --                                 ; --             ;
+; MIN_CORE_JUNCTION_TEMP                ; 0                                                                            ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/../soc_system_sph.cmp                               ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/soc_system_sph_hps_0_hps.svd                        ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/../../soc_system_sph.qsys                           ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/submodules/sequencer/sequencer.pre.c                ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/submodules/sequencer/alt_types.pre.h                ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/submodules/sequencer/sequencer_auto_inst_init.pre.c ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/submodules/sequencer/sequencer.pre.h                ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/submodules/sequencer/emif.pre.xml                   ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/submodules/sequencer/sequencer_auto_ac_init.pre.c   ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/submodules/sequencer/tclrpt.pre.c                   ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/submodules/sequencer/sequencer_auto.pre.h           ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/submodules/sequencer/sequencer_defines.pre.h        ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/submodules/sequencer/tclrpt.pre.h                   ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/submodules/sequencer/system.pre.h                   ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/submodules/sequencer/sdram_io.pre.h                 ; --             ; --                                 ; --             ;
+; MISC_FILE                             ; soc_system_sph/synthesis/submodules/hps.pre.xml                              ; --             ; --                                 ; --             ;
+; PARTITION_COLOR                       ; -- (Not supported for targeted family)                                       ; --             ; soc_system_sph_top_level           ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL   ; -- (Not supported for targeted family)                                       ; --             ; soc_system_sph_top_level           ; Top            ;
+; PARTITION_NETLIST_TYPE                ; -- (Not supported for targeted family)                                       ; --             ; soc_system_sph_top_level           ; Top            ;
+; POWER_BOARD_THERMAL_MODEL             ; None (CONSERVATIVE)                                                          ; --             ; --                                 ; --             ;
+; POWER_PRESET_COOLING_SOLUTION         ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                        ; --             ; --                                 ; --             ;
+; PROJECT_OUTPUT_DIRECTORY              ; output_files                                                                 ; --             ; --                                 ; --             ;
+; SLD_FILE                              ; soc_system_sph/synthesis/soc_system_sph.regmap                               ; --             ; --                                 ; --             ;
+; SLD_FILE                              ; soc_system_sph/synthesis/soc_system_sph.debuginfo                            ; --             ; --                                 ; --             ;
+; SLD_INFO                              ; QSYS_NAME soc_system_sph HAS_SOPCINFO 1 GENERATION_ID 1556275369             ; --             ; --                                 ; --             ;
+; SOPCINFO_FILE                         ; soc_system_sph/synthesis/../../soc_system_sph.sopcinfo                       ; --             ; --                                 ; --             ;
+; SYNTHESIS_ONLY_QIP                    ; On                                                                           ; --             ; --                                 ; --             ;
+; TOP_LEVEL_ENTITY                      ; soc_system_sph_top_level                                                     ; soc_system_sph ; --                                 ; --             ;
+; USE_DLL_FREQUENCY_FOR_DQS_DELAY_CHAIN ; On                                                                           ; Off            ; --                                 ; --             ;
++---------------------------------------+------------------------------------------------------------------------------+----------------+------------------------------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:24     ; 1.0                     ; 1262 MB             ; 00:00:29                           ;
+; Fitter               ; 00:01:25     ; 1.0                     ; 2904 MB             ; 00:01:42                           ;
+; Assembler            ; 00:00:10     ; 1.0                     ; 1011 MB             ; 00:00:10                           ;
+; Timing Analyzer      ; 00:00:31     ; 1.0                     ; 1614 MB             ; 00:00:32                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 1218 MB             ; 00:00:04                           ;
+; Total                ; 00:02:33     ; --                      ; --                  ; 00:02:57                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++----------------------+------------------+----------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++----------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis ; parallels-vm     ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
+; Fitter               ; parallels-vm     ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
+; Assembler            ; parallels-vm     ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
+; Timing Analyzer      ; parallels-vm     ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
+; EDA Netlist Writer   ; parallels-vm     ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
++----------------------+------------------+----------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off soc_system_sph -c soc_system_sph
+quartus_fit --read_settings_files=off --write_settings_files=off soc_system_sph -c soc_system_sph
+quartus_asm --read_settings_files=off --write_settings_files=off soc_system_sph -c soc_system_sph
+quartus_sta soc_system_sph -c soc_system_sph
+quartus_eda --read_settings_files=off --write_settings_files=off soc_system_sph -c soc_system_sph
+
+
+

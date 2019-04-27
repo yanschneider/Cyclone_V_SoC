@@ -1,0 +1,10 @@
+module sev_seg_controller(
+	input logic clk,reset,
+	input logic [23:0] value,
+	output logic [6:0] sev_seg_out[5:0]
+	);
+	
+	
+	
+	
+endmodule
